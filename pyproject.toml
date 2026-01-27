@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glm-fix"
+version = "1.0.0"
+description = "Repair Claude Code sessions corrupted by cross-model thinking block signatures"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Jason Paul Michaels", email = "software@jasonpaulmichaels.co"}
+]
+keywords = ["claude", "claude-code", "session", "repair", "jsonl"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+glm-fix = "glmfix:main"
+
+[project.urls]
+Homepage = "https://github.com/sanchez314c/glm-fix"
+Repository = "https://github.com/sanchez314c/glm-fix"
+Issues = "https://github.com/sanchez314c/glm-fix/issues"
+
+[tool.setuptools]
+py-modules = ["glmfix"]
